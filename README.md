@@ -11,14 +11,14 @@ import (
 )
 
 func main() {
-  fmt.Println(roll.d20())
+  fmt.Println(roll.D20())
 }
 ```
 
 # Extras
 You can also extend by defining your own die
 ```golang
-func d256() uint {
+func D256() uint {
   return Roll(256)
 }
 ```
