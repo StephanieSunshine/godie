@@ -13,7 +13,7 @@ import (
 )
 
 var (
-  seeded boolean
+  seeded bool
 )
 
 func D4() uint {
