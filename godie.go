@@ -11,31 +11,31 @@ import (
   "math/rand"
 )
 
-func d4() uint {
+func D4() uint {
   return Roll(4)
 }
 
-func d6() uint {
+func D6() uint {
   return Roll(6)
 }
 
-func d8() uint {
+func D8() uint {
   return Roll(8)
 }
 
-func d10() uint {
+func D10() uint {
   return Roll(10)
 }
 
-func d12() uint {
+func D12() uint {
   return Roll(12)
 }
 
-func d20() uint {
+func D20() uint {
   return Roll(20)
 }
 
-func d100() uint {
+func D100() uint {
   return Roll(100)
 }
 
