@@ -9,6 +9,11 @@ package godie
 
 import (
   "math/rand"
+  "time"
+)
+
+var (
+  seeded boolean
 )
 
 func D4() uint {
@@ -40,5 +45,10 @@ func D100() uint {
 }
 
 func Roll(max uint) uint {
+  if !seeded {
+    rand.Seed(time.Now().UnixNano())
+    seeded = true
+  }
+
   return (uint(rand.Uint32()) % max)+1
 }
